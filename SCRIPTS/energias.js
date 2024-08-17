@@ -136,9 +136,9 @@ function destruirTres() {
             let energy2 = tabela[r][c + 1];
             let energy3 = tabela[r][c + 2];
             if (energy1.src == energy2.src && energy2.src == energy3.src && !energy1.src.includes("blank")) {
-                energy1.src = "IMAGES/blank.png";
-                energy2.src = "IMAGES/blank.png";
-                energy3.src = "IMAGES/blank.png";
+                energy1.src = "/IMAGES/Tipos/blank.png";
+                energy2.src = "/IMAGES/Tipos/blank.png";
+                energy3.src = "/IMAGES/blank.png";
                 pontuacao += 1;
                 joias += 3;
             }
@@ -150,9 +150,9 @@ function destruirTres() {
             let energy2 = tabela[r + 1][c];
             let energy3 = tabela[r + 2][c];
             if (energy1.src == energy2.src && energy2.src == energy3.src && !energy1.src.includes("blank")) {
-                energy1.src = "IMAGES/blank.png";
-                energy2.src = "IMAGES/blank.png";
-                energy3.src = "IMAGES/blank.png";
+                energy1.src = "/IMAGES/blank.png";
+                energy2.src = "/IMAGES/blank.png";
+                energy3.src = "/IMAGES/blank.png";
                 pontuacao += 1;
                 joias += 3;
             }
@@ -168,10 +168,10 @@ function destruirQuatro() {
             let energy3 = tabela[r][c + 2];
             let energy4 = tabela[r][c + 3];
             if (energy1.src == energy2.src && energy2.src == energy3.src && energy3.src == energy4.src && !energy1.src.includes("blank")) {
-                energy1.src = "IMAGES/blank.png";
-                energy2.src = "IMAGES/blank.png";
-                energy3.src = "IMAGES/blank.png";
-                energy4.src = "IMAGES/blank.png";
+                energy1.src = "/IMAGES/blank.png";
+                energy2.src = "/IMAGES/blank.png";
+                energy3.src = "/IMAGES/blank.png";
+                energy4.src = "/IMAGES/blank.png";
                 pontuacao += 2;
                 joias += 4;
             }
@@ -184,10 +184,10 @@ function destruirQuatro() {
             let energy3 = tabela[r + 2][c];
             let energy4 = tabela[r + 3][c];
             if (energy1.src == energy2.src && energy2.src == energy3.src && energy3.src == energy4.src && !energy1.src.includes("blank")) {
-                energy1.src = "IMAGES/blank.png";
-                energy2.src = "IMAGES/blank.png";
-                energy3.src = "IMAGES/blank.png";
-                energy4.src = "IMAGES/blank.png";
+                energy1.src = "/IMAGES/blank.png";
+                energy2.src = "/IMAGES/blank.png";
+                energy3.src = "/IMAGES/blank.png";
+                energy4.src = "/IMAGES/blank.png";
                 pontuacao += 2;
                 joias += 4;
             }
@@ -204,11 +204,11 @@ function destruirCinco() {
             let energy4 = tabela[r][c + 3];
             let energy5 = tabela[r][c + 4];
             if (energy1.src == energy2.src && energy2.src == energy3.src && energy3.src == energy4.src && energy4.src == energy5.src && !energy1.src.includes("blank")) {
-                energy1.src = "IMAGES/blank.png";
-                energy2.src = "IMAGES/blank.png";
-                energy3.src = "IMAGES/blank.png";
-                energy4.src = "IMAGES/blank.png";
-                energy5.src = "IMAGES/blank.png";
+                energy1.src = "/IMAGES/blank.png";
+                energy2.src = "/IMAGES/blank.png";
+                energy3.src = "/IMAGES/blank.png";
+                energy4.src = "/IMAGES/blank.png";
+                energy5.src = "/IMAGES/blank.png";
                 pontuacao += 3;
                 joias += 5;
             }
@@ -222,11 +222,11 @@ function destruirCinco() {
             let energy4 = tabela[r + 3][c];
             let energy5 = tabela[r + 4][c];
             if (energy1.src == energy2.src && energy2.src == energy3.src && energy3.src == energy4.src && energy4.src == energy5.src && !energy1.src.includes("blank")) {
-                energy1.src = "IMAGES/blank.png";
-                energy2.src = "IMAGES/blank.png";
-                energy3.src = "IMAGES/blank.png";
-                energy4.src = "IMAGES/blank.png";
-                energy5.src = "IMAGES/blank.png";
+                energy1.src = "/IMAGES/blank.png";
+                energy2.src = "/IMAGES/blank.png";
+                energy3.src = "/IMAGES/blank.png";
+                energy4.src = "/IMAGES/blank.png";
+                energy5.src = "/IMAGES/blank.png";
                 pontuacao += 3;
                 joias += 5;
             }
@@ -270,7 +270,7 @@ function mexerEnergy() {
         }
 
         for (let r = ind; r >= 0; r--) {
-            tabela[r][c].src = "IMAGES/blank.png";
+            tabela[r][c].src = "/IMAGES/blank.png";
         }
     }
 }
@@ -278,7 +278,7 @@ function mexerEnergy() {
 function criarEnergy() {
     for (let c = 0; c < columns; c++) {
         if (tabela[0][c].src.includes("blank")) {
-            tabela[0][c].src = "IMAGES/Tipos/" + energiaAleatoria() + ".png";
+            tabela[0][c].src = "/IMAGES/Tipos/" + energiaAleatoria() + ".png";
         }
     }
 }
