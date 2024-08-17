@@ -59,7 +59,7 @@ function trataUtilizador() {
 
             localStorage.setItem(storageUtilizadores, JSON.stringify(players));
             formulario.reset();
-            window.location.assign("login.html");
+            window.location.assign("register.html");
         }
     }
 }
